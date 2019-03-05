@@ -1,4 +1,4 @@
-#!/Users/JamesAngeles/Documents/cs stuff/CodingProjects/PythonProjects/TeacherRank/scrapes/TeacherRankScripts/bin/python
+#!/Users/JamesAngeles/Documents/cs stuff/CodingProjects/PythonProjects/TeacherRank/scrapes/driver_config/bin/python
 
 import sys
 import getopt

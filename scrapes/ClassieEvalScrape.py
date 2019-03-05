@@ -15,8 +15,18 @@ def login(site, userElement, passwordElement, submitElement):
     password.send_keys(credentials.password)
     submitBtn = driver.find_element_by_class_name(submitElement)
     submitBtn.click()
+    
+def departmentSearch(department):
+    searchBox = driver.find_element_by_id("SearchKeyword")
+    searchBox.send_keys(department)
+    searchBox.submit()
+
+def scrapeTeacherReviews():
+
 
 options = Options()
 options.add_argument("--start-maximized")
 driver = webdriver.Chrome(ChromeDriverManager().install())
 login("https://classie-evals.stonybrook.edu", "username", "password", "login-button");
+departmentSearch("cse")
+driver.quit()
